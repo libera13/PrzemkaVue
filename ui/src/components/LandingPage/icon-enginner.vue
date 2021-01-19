@@ -612,11 +612,9 @@
 </template>
 
 <script>
-    export default {
-        name: 'icon-enginner'
-    }
+export default {
+  name: 'icon-enginner'
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

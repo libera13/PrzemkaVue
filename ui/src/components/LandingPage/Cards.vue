@@ -1,24 +1,23 @@
 <template>
   <v-container fluid>
     <v-row>
-    <v-card
-      class="mx-auto"
-      max-width="344"
-      :key="card.title"
-      color="#e8f5e9"
-      v-for="card in cards"
-  >
-      <v-card-text>
-        <v-card-title v-text="card.title"></v-card-title>
-
+      <v-card
+        class="mx-auto"
+        max-width="344"
+        :key="card.title"
+        color="secondary"
+        v-for="card in cards"
+      >
         <v-card-text>
-          I'm a thing. But, like most politicians
+          <v-card-title v-text="card.title"></v-card-title>
+
+          <v-card-text>
+            I'm a thing. But, like most politicians
+          </v-card-text>
         </v-card-text>
-    </v-card-text>
-  </v-card>
+      </v-card>
     </v-row>
   </v-container>
-
 </template>
 
 <script>
