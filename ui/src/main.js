@@ -6,6 +6,7 @@ import vuetify from './plugins/vuetify';
 import Notifications from 'vue-notification';
 import { TimePicker } from 'ant-design-vue';
 import 'ant-design-vue/dist/antd.css';
+import './styles/main.css';
 
 Vue.config.productionTip = false;
 Vue.use(Notifications);
