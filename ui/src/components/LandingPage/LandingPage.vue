@@ -7,12 +7,12 @@
         continuous
         cycle
         progress
-        height="60vh"
+        height="65vh"
         hide-delimiter-background
         delimiter-icon="mdi-minus"
       >
         <v-carousel-item
-          active-class="carousel-item"
+          class="carousel-item"
           v-for="(item, i) in items"
           :key="i"
           :src="item.src"
@@ -212,10 +212,11 @@ export default {
         },
         {
           src:
-            'https://raw.githubusercontent.com/libera13/PrzemkaVue/master/ui/src/assets/od_przem/20200518_163151.webp'
+            'https://raw.githubusercontent.com/libera13/PrzemkaVue/master/ui/src/assets/od_przem/20190826_130948.webp'
         },
         {
-          src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg'
+          src:
+            'https://raw.githubusercontent.com/libera13/PrzemkaVue/master/ui/src/assets/od_przem/20200703_160537.webp'
         }
       ],
       imageLink: {
@@ -237,10 +238,10 @@ export default {
   max-width: 80%;
   margin: auto;
 }
-.carousel-item ::v-deep .v-image__image--cover {
-  background-position: center bottom;
-  /*width: 500px;*/
-}
+//.carousel-item ::v-deep .v-image__image--cover {
+//  background-position: center bottom !important;
+//  /*width: 500px;*/
+//}
 .companyInfo {
   margin-top: 50px;
   margin-bottom: 50px;
