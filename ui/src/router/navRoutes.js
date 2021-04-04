@@ -1,27 +1,21 @@
 export const navRoutes = [
   {
-    path: '/compositions',
-    name: 'Kompozycje',
+    path: '/houses',
+    name: 'Domy mieszkalne',
     component: () =>
-      import(
-        /* webpackChunkName: "Compositions" */ '../views/CompositionsView/CompositionsView.vue'
-      )
+      import(/* webpackChunkName: "HousesView" */ '../views/HousesView.vue')
   },
   {
-    path: '/artists',
-    name: 'Artyści',
+    path: '/storage',
+    name: 'Przechowalnie',
     component: () =>
-      import(
-        /* webpackChunkName: "Artists" */ '../views/ArtistsView/ArtistsView.vue'
-      )
+      import(/* webpackChunkName: "StorageView" */ '../views/StorageView.vue')
   },
   {
-    path: '/composers',
-    name: 'Kompozytorzy',
+    path: '/cooling',
+    name: 'Komory chłodnicze',
     component: () =>
-      import(
-        /* webpackChunkName: "Artists" */ '../views/ComposersView/ComposersView.vue'
-      )
+      import(/* webpackChunkName: "Cooling" */ '../views/CoolingView.vue')
   },
   {
     path: '/addWorkView',

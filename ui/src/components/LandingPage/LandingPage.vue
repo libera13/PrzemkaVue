@@ -2,7 +2,7 @@
   <div class="wrapper">
     <!--    <Head :artists="artists"></Head>-->
 
-    <v-lazy style="margin-top: 20vh;">
+    <v-lazy style="margin-top: 15vh;">
       <v-carousel
         continuous
         cycle

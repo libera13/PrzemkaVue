@@ -72,10 +72,7 @@
           </router-link>
         </ul>
       </div>
-      <template v-if="isRouteThatShouldBeAlwaysRendered">
-        <router-view />
-      </template>
-      <template v-else>
+      <template>
         <keep-alive>
           <router-view />
         </keep-alive>
@@ -110,13 +107,6 @@ export default {
       } else {
         return [...this.routes];
       }
-    },
-    isRouteThatShouldBeAlwaysRendered() {
-      return (
-        this.$route.name === 'composer' ||
-        this.$route.name === 'artist' ||
-        this.$route.name === 'work'
-      );
     }
   },
   created() {
@@ -158,6 +148,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  margin-top: 60px;
   background-color: #f3f2ef;
   color: #2c3e50;
 }
