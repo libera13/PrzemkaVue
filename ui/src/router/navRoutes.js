@@ -1,21 +1,21 @@
 export const navRoutes = [
   {
+    path: '/cooling',
+    name: 'Komory chłodnicze/Przechowalnie',
+    component: () =>
+      import(/* webpackChunkName: "Cooling" */ '../views/CoolingView.vue')
+  },
+  {
     path: '/houses',
     name: 'Domy mieszkalne',
     component: () =>
       import(/* webpackChunkName: "HousesView" */ '../views/HousesView.vue')
   },
   {
-    path: '/storage',
-    name: 'Przechowalnie',
+    path: '/contact',
+    name: 'Kontakt',
     component: () =>
-      import(/* webpackChunkName: "StorageView" */ '../views/StorageView.vue')
-  },
-  {
-    path: '/cooling',
-    name: 'Komory chłodnicze',
-    component: () =>
-      import(/* webpackChunkName: "Cooling" */ '../views/CoolingView.vue')
+      import(/* webpackChunkName: "StorageView" */ '../views/ContactView.vue')
   },
   {
     path: '/addWorkView',
